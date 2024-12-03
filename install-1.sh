@@ -2,6 +2,8 @@
 
 ROOT_DISK=$1
 
+pacman -Sy archlinux-keyring
+
 fdisk $ROOT_DISK << EOF
 g
 n
